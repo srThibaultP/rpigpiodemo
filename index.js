@@ -8,11 +8,11 @@ console.log("En marche");
 button.watch((err, value) => {
     i++;
     if (i == 2) {
-        date2 = dateF;
+        date2 = new Date().getTime() / 1000;
         i = 0;
         console.log(date2 - date1);
     } else {
-        date1 = dateF;
+        date1 = new Date().getTime() / 1000;
     }
 });
 
