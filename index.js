@@ -5,9 +5,14 @@ let i = 0;
 
 console.log("En marche");
 button.watch((err, value) => {
-    i++
-});
-if (i>1) {
-    i--;
-    console.log(new Date());
+
+    i++;
+console.log(i);
+    if(i==2) {
+	console.log("heya");
+	i=0;
+}else {
+console.log("nop");
 }
+});
+
