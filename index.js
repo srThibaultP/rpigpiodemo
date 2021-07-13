@@ -5,14 +5,12 @@ let i = 0;
 
 console.log("En marche");
 button.watch((err, value) => {
-
     i++;
-console.log(i);
-    if(i==2) {
-	console.log("heya");
-	i=0;
-}else {
-console.log("nop");
-}
+    if (i == 2) {
+        console.log("heya");
+        i = 0;
+    } else {
+        console.log("nop");
+    }
 });
 
